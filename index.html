@@ -1,0 +1,18 @@
+<script type=module>
+import {bg, show} from "https://js.sabae.cc/egadv.js";
+await bg();
+
+for (;;){
+  if (await show("移動する?", ["はい", "いいえ"]) == "はい"){
+  break;
+}
+  await show("移動しますましょう");
+}
+
+const a = await show("日本の美しい自然風景", ["日本", "他の国"]);
+if (a == "日本"){
+  await show("正解?");
+} else if ( a == "他の国"){
+  await show("違う場所");
+}
+</script>
